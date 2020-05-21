@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--MENU--*/
+
+.menu {
+    display: flex;
+}
+
+.menu .logo img {
+    padding-top: 30px;
+    padding-left: 231px;
+    padding-right: 122.4px;
+}
+
+.menu .links {
+    padding-top: 38px;
+    padding-bottom: 36px;
+}
+
+.menu a {
+    padding-right: 30px;
+    color: #111111;
+    font-size: 16px;
+    text-decoration-line: none;
+}
+
+/*--INTRO--*/
+
+.rectangle-intro {
+    margin: 0 auto;
+    width: 940px;
+    height: 366px;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    display: flex;
+    position: relative;
+}
+
+.rectangle-intro .intro h1{
+    padding-top: 117px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+}
+
+.rectangle-intro .intro p {
+    max-width: 316px;
+    padding-left: 60px;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.rectangle-intro .chef img {
+    padding-top: 66px ;
+    padding-left: 248px;
+    padding-right: 100px;
+}
+
+/*--RECIPE--*/
+
+.recipes {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.recipes h2 {
+    padding-top: 50px;     
+}
+
+/*--RECIPE CARDS--*/
+
+.recipe-cards {
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    position: relative;
+
+}
+
+.card{
+    margin-bottom: 10px;
+    
+}
+.card img {
+    max-width: 300px;
+    max-height: 140px;
+    border-radius: 15px;
+}
+
+.card .title {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.card .by {
+    font-size: 14px;
+    color: #777777;
+}
+
+/*--TEXT--*/
+
+.text h1 {
+    padding: 20px 0px;
+}
+
+.text h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.text {
+    margin: 0px 230px auto;
+}
+
+.text p{
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+/*--FOOTER--*/
+.footer {
+    margin-top: 20vh;
+    background-color: #eeeeee;
+}
+
+.footer p {
+    padding: 32px;
+    color: #999999;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*--MODAL--*/
+
+.modal-overlay {
+    background-color: rgba(000, 000, 000, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 660px;
+    height: 413px;
+    border-radius: 16px;
+    position: relative;
+    margin: 9% auto;
+}
+
+.close-modal {
+    position: absolute;
+    bottom: 30px;
+    right: 281px;
+    left: 281px;
+}
+
+.close-modal a p {
+    color: #999999;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--MODAL ACTIVE--*/
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.recipe img {
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    left: 30px;
+}
+
+.recipe p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.recipe .title {
+    position: absolute;
+    top: 250px;
+    font-size: 24px;
+    left: 10%;
+    right: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.recipe .by {
+    position: absolute;
+    bottom: 109px;
+    font-size: 18px;
+    left: 10%;
+    right:10%;
+    color: #777777;
+    font-family: 'Roboto', sans-serif;
+}
